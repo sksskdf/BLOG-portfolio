@@ -9,15 +9,15 @@ Link : https://blog-harry.vercel.app/
 -------
 
 ### 사용 기술 스택
-    NextJS
+NextJS
     
 ------
   
 ### 기능
-#### 블로그 포스트 불러오기: 
+#### 블로그 포스트 불러오기
 파일시스템의 /posts 경로에 있는 md파일들을 /lib/posts.js 파일에서 읽어 객체로 파싱한 뒤 블로그포스트와 관련된 정보들을 불러오는 함수들을 export 합니다.
----
-#### 메인화면:
+
+#### 메인화면
 블로그 주인과 관련된 정보와 export한 /lib/posts.js 파일의 함수를 이용하여 포스트 정보들을 불러온 뒤 
         
         <ul className={utilStyles.list}>
@@ -34,3 +34,6 @@ Link : https://blog-harry.vercel.app/
       
 위 코드에서 보는 것 처럼 map함수를 이용해서 li를 만듭니다.
 li는 해당 포스트 상세보기로 이동하는 Link를 포함합니다.
+
+#### 포스트 상세보기
+
