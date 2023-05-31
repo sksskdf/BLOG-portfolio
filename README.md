@@ -36,4 +36,24 @@ NextJS
 li는 해당 포스트 상세보기로 이동하는 Link를 포함합니다.
 
 #### 포스트 상세보기
+Next.js 에선 파일시스템의 /pages를 루트로 한 디렉토리 패스가 라우팅 주소와 매칭됩니다.
+이를 이용해 /pages/posts/[id].js 파일에서 포스트 상세보기 화면을 구현합니다. (파일내부에서 파일제목인 [id]를 통해 매개변수화된 라우팅주소를 인자로 받습니다.)
+해당 id를 통해 포스트정보를 불러온 뒤 
 
+    <Layout>
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+      <article>
+        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <div className={utilStyles.lightText}>
+          <Date dateString={postData.date} />
+        </div>
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </article>
+    </Layout>
+
+위 코드와 같이 포스트 정보를 출력합니다.
+
+### Next.js 를 사용해 본 소감
