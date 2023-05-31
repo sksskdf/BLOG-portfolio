@@ -17,7 +17,7 @@ Link : https://blog-harry.vercel.app/
       
   메인화면:
     블로그 주인과 관련된 정보와 export한 /lib/posts.js 파일의 함수를 이용하여 포스트 정보들을 불러온 뒤 
-    ```
+        
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -29,7 +29,6 @@ Link : https://blog-harry.vercel.app/
             </li>
           ))}
         </ul>
-    ```
       
   위 코드에서 보는 것 처럼 map함수를 이용해서 li를 만듭니다.
   li는 해당 포스트 상세보기로 이동하는 Link를 포함합니다.
