@@ -1,1 +1,7 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# BLOG
+
+# 사용 기술 스택
+  NextJS
+  
+# 기능
+  글 쓰기, 글 보기
